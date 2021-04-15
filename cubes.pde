@@ -5,6 +5,9 @@ Minim minim;
 AudioPlayer song;
 FFT fft;
 
+
+String song_path = 'SONG PATH';
+
 // Variables qui définissent les "zones" du spectre
 // Variables which define the "zones" of the spectrum
 // Par exemple, pour les basses, on prend seulement les premières 4% du spectre total
@@ -56,7 +59,7 @@ void setup()
  
   //Charger la chanson
   // Load the song
-  song = minim.loadFile("song.mp3");
+  song = minim.loadFile(song_path);
   
   //Créer l'objet FFT pour analyser la chanson
   // Create the FFT object to analyze the song
